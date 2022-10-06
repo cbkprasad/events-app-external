@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Team Prasad's Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+   
+  <div class="jumbotron text-center">
+      <h1>Welcome to Prasad's application</h1>
+   
+</div>
+<div class = "container">
+    <div class="row">
+         <div class="col-sm-4">
+     {{{body}}}
+     </div>
+  <h2>Add an event</h2>
+  
+    <div class="col-sm-4">
+    <form action="/event" method="post" role="form">
+       Title: <input name="title" type="text" class ="form-control" /> <br />
+       Description: <input name="description" type="text" class ="form-control"/> <br />
+       Location: <input name="location" type="text" class ="form-control"/> <br />
+       <br />
+        <input type="submit" name="submit" value="submit" class="btn btn-success"/>
+        </form></div></div>
+
+    </form>
+  </div>
+</body>
+</html>

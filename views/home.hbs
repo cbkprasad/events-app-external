@@ -1,0 +1,19 @@
+<ul class="nav nav-pills nav-stacked">
+  {{#events}}
+    <li class="active">
+        <h2>{{ title }}</h2>
+        <p><span class="badge">{{ description }}</span></p>
+        <p>Location: {{ location }}</p>
+        <p>Likes: {{ likes }}
+        <form method="POST" action="/event/like" >
+        <input type="hidden" value="{{id}}" name="id">
+        <input type="submit" value="Like" class="btn btn-success">
+        </form>
+        <form method="POST" action="/event/unlike">
+        <input type="hidden" value="{{id}}" name="id" >
+        <input type="submit" value="UN-Like" class="btn btn-success">
+        </form>
+        </p>
+    </li>
+  {{/events}}
+</ul>
