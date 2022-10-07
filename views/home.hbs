@@ -4,7 +4,7 @@
         <h2>{{ title }}</h2>
         <p><span class="badge">{{ description }}</span></p>
         <p>Location: {{ location }}</p>
-        <p>Likes: {{ likes }}
+        <p>Please Like: {{ likes }}
         <form method="POST" action="/event/like" >
         <input type="hidden" value="{{id}}" name="id">
         <input type="submit" value="Like" class="btn btn-success">
